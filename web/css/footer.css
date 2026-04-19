@@ -1,0 +1,121 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Apr 18, 2026, 4:22:58 PM
+    Author     : LEGION 5
+*/
+
+.footer-custom {
+    background: linear-gradient(135deg, #ff9acb 0%, #a8e0ff 100%); /* gradient hồng → xanh mint dễ thương */
+    color: white;
+    padding: 4rem 0 2rem;
+    margin-top: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-custom::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    animation: floatBubble 12s infinite ease-in-out;
+}
+
+.footer-custom::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    right: -80px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 182, 193, 0.12);
+    border-radius: 50%;
+    animation: floatBubble 15s infinite ease-in-out reverse;
+}
+
+@keyframes floatBubble {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(40px, -30px);
+    }
+}
+
+.footer-custom h5 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.footer-custom h5::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 3px;
+}
+
+.footer-custom .small {
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.hover-link {
+    transition: all 0.3s ease;
+    color: white !important;
+}
+
+.hover-link:hover {
+    color: var(--yellow-accent) !important;
+    padding-left: 8px;
+    text-decoration: underline;
+}
+
+.social-icons a {
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.social-icons a:hover {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.2);
+    color: var(--yellow-accent) !important;
+}
+
+@media (max-width: 767px) {
+    .footer-custom {
+        padding: 3rem 0 1.5rem;
+    }
+    .social-icons {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+.icon-title {
+    color: var(--primary); 
+    font-size: 18px;
+}
+
+.footer-custom i {
+    transition: 0.3s;
+}
+
+.hover-link:hover i {
+    transform: translateX(3px);
+}
+
+.social-icons a:hover i {
+    transform: scale(1.15);
+}

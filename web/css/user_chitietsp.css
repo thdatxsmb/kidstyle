@@ -1,0 +1,113 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Mar 12, 2026, 4:13:05 PM
+    Author     : LEGION 5
+*/
+
+.product-detail{
+    margin-top:25px;
+    background:#fff;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.08);
+}
+
+.image-box{
+    background:#f8f8f8;
+    border-radius:16px;
+    padding:20px;
+    text-align:center;
+}
+
+.image-box img{
+    max-height:450px;
+    transition:0.4s;
+}
+
+.image-box img:hover{
+    transform:scale(1.07);
+}
+
+.product-title{
+    font-size:26px;
+    font-weight:700;
+    color:#222;
+}
+
+.price-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:15px 0;
+}
+
+.price{
+    font-size:30px;
+    font-weight:800;
+    color:#e63946;
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:#aaa;
+}
+
+.discount-badge{
+    background:#ff4d6d;
+    color:#fff;
+    padding:4px 8px;
+    border-radius:6px;
+    font-size:12px;
+}
+
+.product-desc{
+    color:#555;
+    line-height:1.6;
+}
+
+.stock{
+    margin-top:10px;
+    color:#777;
+}
+
+.product-actions{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+}
+
+.product-actions .btn{
+    flex:1;
+    height:50px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+.btn-cart{
+    background:linear-gradient(135deg,#3f8cff,#6ea8fe);
+    color:white;
+    border:none;
+}
+
+.btn-cart:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 15px rgba(63,140,255,0.4);
+}
+
+.btn-buy{
+    background:linear-gradient(135deg,#ff4d6d,#ff758f);
+    color:white;
+    border:none;
+}
+
+.btn-buy:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 15px rgba(255,77,109,0.4);
+}
+
+.back-btn{
+    border-radius:10px;
+}

@@ -1,0 +1,305 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/*
+    Created on : Feb 25, 2026, 3:18:34 PM
+    Author     : LEGION 5
+*/
+
+.main-content {
+    margin-top: 100px;
+    padding: 20px 0;
+    position: relative;
+    transition: transform 0.25s ease;
+    will-change: transform;
+}
+
+.custom-banner {
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 111, 165, 0.2);
+}
+
+.custom-banner img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.custom-banner img:hover {
+    transform: scale(1.03);
+}
+h2.section-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 30px 0 40px;
+    color: #e03e7e;
+    position: relative;
+}
+
+h2.section-title::before,
+h2.section-title::after {
+    content: '✦';
+    color: #ffe066;
+    font-size: 1.4rem;
+    margin: 0 10px;
+}
+
+.product-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    background: var(--card-bg);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(255, 111, 165, 0.25);
+}
+
+.card-img-top {
+    height: 240px;
+    object-fit: cover;
+}
+
+.service-icon {
+    font-size: 3.8rem;
+    color: #ff6b6b;
+}
+
+.service-box {
+    padding: 30px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.service-box:hover {
+    background: #fff8f9;
+    transform: translateY(-8px);
+}
+
+.price {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #e03e7e;
+}
+
+.btn-view-detail {
+    background: #0288d1 !important; 
+    color: white !important;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 0;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 12px;
+    transition: all 0.3s;
+}
+
+.btn-view-detail:hover {
+    background: #0277bd !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(2, 136, 209, 0.4);
+}
+
+footer {
+    background: #333;
+    color: #ddd;
+    padding: 4rem 0 2rem;
+    margin-top: 5rem;
+}
+
+.navbar-toggler {
+    display: block !important;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+.card-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;        
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    min-height: 48px;             
+    line-height: 1.2;
+}
+
+.product-card .btn{
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 0;
+    height: auto; 
+    transition: all 0.25s ease;
+}
+
+.product-card .btn-outline-primary{
+    background: linear-gradient(135deg,#3f8cff,#6ea8fe);
+    color: white;
+    border: none;
+}
+
+.product-card .btn-outline-primary:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(63,140,255,0.35);
+}
+
+.product-card .btn-danger{
+    background: linear-gradient(135deg,#ff4d6d,#ff758f);
+    border: none;
+}
+
+.product-card .btn-danger:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255,77,109,0.35);
+}
+
+.badge{
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{ transform: scale(1); box-shadow:0 0 0 0 rgba(255,0,0,0.4);}
+    70%{ transform: scale(1.08); box-shadow:0 0 0 10px rgba(255,0,0,0);}
+    100%{ transform: scale(1);}
+}
+.badge.bg-danger{
+    background: linear-gradient(135deg,#ff4d6d,#ff758f) !important;
+}
+.hero-review {
+    background: #8fa8b3;
+    padding: 80px 0;
+    border-radius: 0 0 50px 50px;
+}
+
+.hero-review .container {
+    max-width: 1100px;
+}
+
+.hero-img {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-img .blob {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background: #6f8893;
+    border-radius: 60% 40% 50% 50%;
+    top: -30px;
+    left: -40px;
+    z-index: 1;
+}
+
+.hero-content {
+    max-width: 500px;
+    color: white;
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-quote {
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.hero-author {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.hero-location {
+    opacity: 0.8;
+}
+
+.hero-arrows {
+    margin-top: 30px;
+}
+
+.hero-arrows button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+    background: white;
+    color: #333;
+    transition: 0.3s;
+}
+
+.hero-arrows button:hover {
+    background: #ff6b9a;
+    color: white;
+}
+
+.hero-review .carousel-control-prev,
+.hero-review .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.hero-review .carousel-control-prev:hover,
+.hero-review .carousel-control-next:hover {
+    background: #ff6b9a;
+}
+
+.hero-review .carousel-control-prev-icon,
+.hero-review .carousel-control-next-icon {
+    filter: invert(1);
+}
+.banner-grid img {
+    transition: 0.4s;
+}
+
+.banner-grid img:hover {
+    transform: scale(1.05);
+}
+
+.banner-grid h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.banner-grid p {
+    font-size: 15px;
+    line-height: 1.6;
+}

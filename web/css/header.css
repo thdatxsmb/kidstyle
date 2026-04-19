@@ -1,0 +1,58 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/*
+    Created on : Feb 25, 2026, 3:05:23 PM
+    Author     : LEGION 5
+*/
+
+.navbar {
+    background: var(--blue-gradient);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 12px 0;
+    border-bottom: 3px solid #ff6fa5;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1100;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffe066 !important;
+    transform: translateY(-2px);
+}
+
+.btn-outline-light {
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-outline-light:hover {
+    background: white;
+    color: #e03e7e;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}

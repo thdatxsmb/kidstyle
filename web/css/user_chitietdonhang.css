@@ -1,0 +1,181 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Apr 11, 2026, 10:28:52 PM
+    Author     : LEGION 5
+*/
+
+.order-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.order-header h2{
+    font-weight:700;
+}
+
+.order-actions{
+    display:flex;
+    gap:10px;
+}
+
+.card{
+    border-radius:16px;
+    border:none;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+
+.card-header{
+    background:#fff;
+    border-bottom:1px solid #eee;
+}
+
+.order-status{
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.status-pending{
+    background:#ffe08a;
+    color:#8a6d00;
+}
+
+.status-confirmed{
+    background:#b6effb;
+    color:#055160;
+}
+
+.status-shipping{
+    background:#c7d2fe;
+    color:#1e40af;
+}
+
+.status-done{
+    background:#bbf7d0;
+    color:#065f46;
+}
+
+.status-cancel-req{
+    background:#fed7aa;
+    color:#9a3412;
+}
+
+.status-cancel{
+    background:#fecaca;
+    color:#7f1d1d;
+}
+
+.status-return {
+    background: linear-gradient(135deg, #fff7cc, #fde68a);
+    color: #92400e;
+    border: 1px solid #fcd34d;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(255, 193, 7, 0.3);
+}
+
+.status-return-done {
+    background: linear-gradient(135deg, #cffafe, #a5f3fc);
+    color: #0e7490;
+    border: 1px solid #67e8f9;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(14, 116, 144, 0.25);
+}
+
+.table th{
+    text-align:center;
+    background:#f8f9fa;
+}
+
+.table td{
+    text-align:center;
+}
+
+.product-img{
+    width:60px;
+    height:60px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.product-img:hover{
+    transform:scale(1.08);
+}
+
+.product-count{
+    background:#0d6efd;
+    color:#fff;
+    padding:5px 12px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.badge{
+    animation:none !important;
+}
+
+i{
+    animation:none !important;
+}
+
+.order-actions .btn{
+    border-radius:10px;
+    font-size:14px;
+    padding:6px 14px;
+    font-weight:500;
+    display:flex;
+    align-items:center;
+    gap:5px;
+    transition:0.25s;
+}
+
+.btn-cancel{
+    background:#fee2e2;
+    color:#b91c1c;
+    border:none;
+}
+
+.btn-cancel:hover{
+    background:#fecaca;
+    transform:translateY(-1px);
+}
+
+.btn-return{
+    background:#fff7ed;
+    color:#c2410c;
+    border:none;
+}
+
+.btn-return:hover{
+    background:#ffedd5;
+    transform:translateY(-1px);
+}
+
+.btn-rebuy{
+    background:#e0f2fe;
+    color:#0369a1;
+    border:none;
+}
+
+.btn-rebuy:hover{
+    background:#bae6fd;
+    transform:translateY(-1px);
+}
+
+.btn-outline-secondary{
+    border-radius:10px;
+}

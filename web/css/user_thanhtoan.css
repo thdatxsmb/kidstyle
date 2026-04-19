@@ -1,0 +1,81 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Mar 14, 2026, 10:31:30 PM
+    Author     : LEGION 5
+*/
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Inter', sans-serif;
+}
+
+#main, .main-content {
+    transition: all 0.3s ease;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card-header {
+    font-weight: bold;
+    border-radius: 15px 15px 0 0 !important;
+}
+
+.table th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.total {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+#qrSection {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px dashed #dee2e6;
+    padding: 30px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+#qrSection img {
+    max-width: 250px;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.soLuongInput::-webkit-inner-spin-button,
+.soLuongInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.product-row img {
+    transition: transform 0.2s;
+}
+
+.product-row:hover img {
+    transform: scale(1.1);
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.btn-lg {
+    border-radius: 12px;
+    padding: 15px;
+}

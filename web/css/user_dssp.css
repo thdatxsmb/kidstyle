@@ -1,0 +1,246 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+
+/*
+    Created on : Feb 25, 2026, 11:08:48 AM
+    Author     : LEGION 5
+*/
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+    margin-top:30px;
+}
+
+@media(max-width:1200px){
+    .product-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:768px){
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+.card-product {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.card-product img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    transition:0.35s;
+}
+
+.card-product:hover img{
+    transform: scale(1.05);
+}
+
+.product-info{
+    padding:15px;
+    text-align:center;
+}
+
+.product-name{
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    font-weight:600;
+    color:#333;
+    text-decoration:none;
+    margin-bottom:8px;
+    min-height:40px;
+    line-height:1.3;
+}
+
+.product-name:hover{
+    color:#0d6efd;
+}
+
+.price-box{
+    height:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#e63946;
+    font-weight:700;
+    font-size:18px;
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:#999;
+    font-size:14px;
+}
+
+.product-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.sale-badge {
+    background:#ff4d4f;
+    color:#fff;
+    width:50px;
+    text-align:center;
+    border-radius:0 0 10px 0;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    overflow:hidden;
+}
+
+.sale-badge .percent {
+    font-size:14px;
+    font-weight:bold;
+    padding:4px 0;
+}
+
+.sale-badge .label {
+    font-size:10px;
+    background:#ffc107;
+    color:#333;
+    padding:2px 0;
+}
+
+.new-badge {
+    background:#00c853;
+    color:#fff;
+    font-size:12px;
+    padding:5px 10px;
+    border-radius:0 0 10px 0;
+    font-weight:bold;
+}
+
+.product-actions{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+
+.product-actions .btn{
+    flex:1;
+    height:44px;
+    border-radius:10px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    border:none;
+    transition: all 0.25s ease;
+    color:#fff !important;
+
+    white-space: nowrap; 
+    font-size:13px;      
+}
+
+.product-actions .btn i{
+    font-size:16px;
+}
+
+.btn-cart{
+    background:linear-gradient(135deg,#3f8cff,#6ea8fe);
+    color:#fff;
+}
+
+.btn-cart:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 14px rgba(63,140,255,0.35);
+}
+
+.btn-buy{
+    background:linear-gradient(135deg,#ff4d6d,#ff758f);
+    color:#fff;
+}
+
+.btn-buy:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 14px rgba(255,77,109,0.35);
+}
+
+.empty{
+    padding:60px;
+    text-align:center;
+    font-size:18px;
+    color:#777;
+}
+
+.category-section {
+    margin-bottom: 40px;
+}
+
+.category-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    border-left: 5px solid #ff4d6d;
+    padding-left: 10px;
+}
+
+.category-menu {
+    display: flex;
+    gap: 12px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 10px 5px;
+    margin-bottom: 25px;
+
+    scroll-behavior: smooth;
+}
+
+.category-menu::-webkit-scrollbar {
+    height: 12px;
+}
+.category-menu::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 10px;
+}
+
+.category-menu a{
+    flex:0 0 auto;
+    padding: 4px 26px;   
+    border-radius:30px;
+    background:#f5f5f5;
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+    transition:0.3s;
+    white-space: nowrap;
+
+}
+
+.category-menu a:hover{
+    background:#ff4d6d;
+    color:#fff;
+}
+
+.category-menu a.active{
+    background:#ff4d6d;
+    color:#fff;
+    font-weight:600;
+}

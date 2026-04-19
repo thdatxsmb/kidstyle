@@ -1,0 +1,124 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Mar 25, 2026, 10:58:56 PM
+    Author     : LEGION 5
+*/
+
+body {
+    background: linear-gradient(135deg, #e6f4ea, #fdfbff);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-container {
+    width: 100%;
+    max-width: 520px;
+    padding: 15px;
+}
+
+.card {
+    border: none;
+    border-radius: 28px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+    padding: 35px 30px;
+    background: linear-gradient(180deg, #ffffff, #f9fffb);
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+.success-icon {
+    font-size: 4.5rem;
+    color: #22c55e;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #16a34a;
+    margin-bottom: 10px;
+}
+
+.lead {
+    font-size: 1.05rem;
+    color: #555;
+}
+
+.alert {
+    background: #ffcccc;
+    border: none;
+    border-radius: 14px;
+    color: #0099ff;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.text-muted {
+    color: #6b7280 !important;
+    font-size: 0.95rem;
+}
+
+.btn-custom {
+    padding: 13px 20px;
+    font-size: 1.05rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0099cc, #6366f1);
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #4338ca, #4f46e5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(79,70,229,0.3);
+}
+
+.btn-outline-primary {
+    background: linear-gradient(135deg, #22c55e, #4ade80);
+    border: none;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(34,197,94,0.35);
+}
+
+.d-grid a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
